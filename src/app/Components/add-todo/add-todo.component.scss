@@ -1,0 +1,68 @@
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: -1.5rem;
+    width: fit-content;
+   
+
+   
+}
+.input-container>form>input{
+    position: relative;
+    height: 7vh;
+    width: 70vh;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    border-color: white;
+    border-width: 1.5px;
+    padding: 0.5rem;
+    box-shadow:3px 3px 3px grey;
+    margin-top: 0.7rem;
+}
+
+
+//============================================ MEDIUM SIZED DEVICES ==============================================
+@media screen and (max-width: 992px){
+   
+    .input-container{
+        position: relative;
+  
+     
+    }
+
+    .input-container>form>input{
+       
+        height: 6vh;
+        width: 45vh;
+      
+        border-radius: 30px;
+    
+    }
+    .buttons{
+        margin-top: 1rem;
+    }
+}
+
+//============================================ SMALL SIZED DEVICES ==============================================
+@media screen and (max-width: 600px){
+    .input-container{
+       
+        margin-left: 0.1rem;
+       
+    }
+    .input-container>form>input{
+        position: relative;
+        height: 6vh;
+        width: 35vh;
+        margin-left: -2.5rem;
+    
+    }
+    .buttons{
+        margin-top: 0.5rem;
+    }
+
+
+}

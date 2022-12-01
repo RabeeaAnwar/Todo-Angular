@@ -1,0 +1,9 @@
+<app-add-todo (todoAdd)="addNote($event)"></app-add-todo>
+<div class="cards-container" cdkDropList (cdkDropListDropped)="drop($event)" cdkDropListGroup>
+    <div *ngIf="this.todos.length===0; else elseBlock"  ><h3>No Todos To Display!!!</h3></div>
+    <ng-template #elseBlock>
+        <div *ngFor="let todo of todos" >
+            <app-todo-item [todo]="todo" (todoDelete)="deleteNote($event)" cdkDrag ></app-todo-item>
+        </div>
+    </ng-template>
+</div>

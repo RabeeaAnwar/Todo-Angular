@@ -1,0 +1,46 @@
+
+.cards-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 1.5rem;
+    width: 100%;
+    background-color:transparent;
+    overflow: hidden;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.cards-container>div>h3{
+    position: absolute;
+    margin-left: 5vw
+    
+}
+
+
+//============================================ MEDIUM SIZED DEVICES ==============================================
+@media screen and (max-width: 992px){
+    .cards-container{
+        grid-template-columns: auto auto;
+        row-gap: 0.5rem;
+        column-gap: 0.2rem;
+    }
+    .cards-container>div>h3{
+     
+        margin-left: 3vw
+    }
+}
+
+//============================================ SMALL SIZED DEVICES ==============================================
+@media screen and (max-width: 600px){
+    .cards-container{
+        grid-template-columns: auto ;
+        row-gap: 0.5rem;
+       padding-left: 20%;
+    }
+
+    .cards-container>div>h3{
+       
+        margin-left: 0.5vw
+    }
+
+}

@@ -1,0 +1,49 @@
+.container-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle{
+    display: flex;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: auto;
+    top: 1rem;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.add-container{
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+   
+}
+
+
+//============================================ MEDIUM SIZED DEVICES ==============================================
+@media screen and (max-width: 992px){
+ .toggle{
+    margin-left: 65%;
+    top: 1rem;
+   
+
+ }
+}
+
+//============================================ SMALL SIZED DEVICES ==============================================
+@media screen and (max-width: 600px){
+    .toggle{
+        margin-left: 60%;
+        top: 1.1rem;
+     }
+
+}
